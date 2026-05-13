@@ -164,7 +164,8 @@ Role	Email	Password
 Admin	(register as Admin)	(your chosen password)
 Client	(register as Client)	(your chosen password)
 
-###🌍 Deployment
+---
+##🌍 Deployment
 Deployed on Render
 Web Service: Spring Boot application running on Render
 
@@ -179,7 +180,8 @@ SPRING_DATASOURCE_USERNAME	Database username
 SPRING_DATASOURCE_PASSWORD	Database password
 SPRING_PROFILES_ACTIVE	prod (activates production config)
 
-###📖 Usage Guide
+---
+##📖 Usage Guide
 ###Client Flow
 Sign Up - Create a new account (select "Client" role)
 
@@ -236,13 +238,17 @@ carwash-management-system/
 ├── pom.xml                       # Maven dependencies
 └── README.md                     # This file
 
-###👥 Contributors
+---
+
+##👥 Contributors
 Name	Role
 Believe05	Full Stack Developer
 Reflection Statement
 Each team member has written a 1000-word reflection statement describing their role in the project and what they learned throughout the semester. These are available in the project documentation.
 
-###🔧 Troubleshooting
+---
+
+##🔧 Troubleshooting
 Common Issues
 Issue	Solution
 Database connection error	Check environment variables in Render

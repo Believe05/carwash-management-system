@@ -41,9 +41,9 @@
             font-size: 12px;
             font-weight: bold;
         }
-        .status-pending {
-            background-color: #ffc107;
-            color: #333;
+        .status-completed {
+            background-color: #17a2b8;
+            color: white;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 12px;
@@ -101,7 +101,7 @@
                     <!-- UNPAID Bookings Section -->
                     <div class="card mb-4">
                         <div class="card-header bg-warning text-dark">
-                            <h5 class="mb-0"><i class="fas fa-clock me-2"></i> Pending Payments (Unpaid)</h5>
+                            <h5 class="mb-0"><i class="fas fa-clock me-2"></i> Ready for Payment</h5>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -112,7 +112,7 @@
                                             <th>Vehicle</th>
                                             <th>Service</th>
                                             <th>Amount</th>
-                                            <th>Payment Status</th>
+                                            <th>Booking Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -126,8 +126,8 @@
                                             <td th:text="${booking.serviceType}">Premium</td>
                                             <td class="text-success fw-bold">R<span th:text="${booking.totalAmount}">0</span></td>
                                             <td>
-                                                <span class="status-unpaid">
-                                                    <i class="fas fa-exclamation-circle me-1"></i> UNPAID
+                                                <span class="status-completed">
+                                                    <i class="fas fa-check-circle me-1"></i> <span th:text="${booking.status}">COMPLETED</span>
                                                 </span>
                                             </td>
                                             <td>
@@ -150,7 +150,7 @@
                                         <tr th:if="${#lists.isEmpty(unpaidBookings)}">
                                             <td colspan="6" class="text-center text-muted py-5">
                                                 <i class="fas fa-check-circle fa-3x mb-2 d-block"></i>
-                                                No pending payments. All your bookings are paid!
+                                                No bookings ready for payment. Bookings need to be COMPLETED by admin first.
                                             </td>
                                         </tr>
                                     </tbody>
@@ -191,7 +191,7 @@
                                                     <i class="fas fa-check-circle me-1"></i> PAID
                                                 </span>
                                             </td>
-                                            <td th:text="${booking.paymentDate != null ? #temporals.format(booking.paymentDate, 'yyyy-MM-dd HH:mm') : 'N/A'}"></td>
+                                            <td th:text="${booking.paymentDate != null ? #temporals.format(booking.paymentDate, 'yyyy-MM-dd HH:mm') : 'N/A'}">N/A</td>
                                         </tr>
                                         <tr th:if="${#lists.isEmpty(paidBookings)}">
                                             <td colspan="6" class="text-center text-muted py-5">

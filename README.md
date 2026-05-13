@@ -165,7 +165,7 @@ Admin	(register as Admin)	(your chosen password)
 Client	(register as Client)	(your chosen password)
 
 ---
-##🌍 Deployment
+### 🌍 Deployment
 Deployed on Render
 Web Service: Spring Boot application running on Render
 
@@ -173,7 +173,7 @@ Database: PostgreSQL managed by Render
 
 Auto-deploy: Connected to GitHub, deploys on push
 
-###Environment Variables (Render)
+### Environment Variables (Render)
 Variable	Description
 SPRING_DATASOURCE_URL	PostgreSQL connection URL
 SPRING_DATASOURCE_USERNAME	Database username
@@ -181,8 +181,8 @@ SPRING_DATASOURCE_PASSWORD	Database password
 SPRING_PROFILES_ACTIVE	prod (activates production config)
 
 ---
-##📖 Usage Guide
-###Client Flow
+### 📖 Usage Guide
+### Client Flow
 Sign Up - Create a new account (select "Client" role)
 
 Login - Access your dashboard
@@ -197,7 +197,7 @@ Earn Points - Loyalty points automatically added
 
 Check Status - View booking history and payment status
 
-###Admin Flow
+### Admin Flow
 Login as Admin
 
 Dashboard - View statistics and quick actions
@@ -214,7 +214,7 @@ Loyalty Program - Monitor points distribution
 
 ---
 
-###📁 Project Structure
+## 📁 Project Structure
 
 carwash-management-system/
 ├── src/
@@ -240,7 +240,7 @@ carwash-management-system/
 
 ---
 
-##👥 Contributors
+## 👥 Contributors
 Name	Role
 Believe05	Full Stack Developer
 Reflection Statement
@@ -248,7 +248,7 @@ Each team member has written a 1000-word reflection statement describing their r
 
 ---
 
-##🔧 Troubleshooting
+## 🔧 Troubleshooting
 Common Issues
 Issue	Solution
 Database connection error	Check environment variables in Render
@@ -263,10 +263,10 @@ Email: support@carwashpro.co.za
 
 WhatsApp: +27 82 123 4567 (via website)
 
-###📄 License
+### 📄 License
 This project was developed for educational purposes as part of the INT316D course requirement.
 
-###🙏 Acknowledgments
+### 🙏 Acknowledgments
 Spring Boot Documentation
 
 Render Cloud Platform

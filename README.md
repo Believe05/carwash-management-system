@@ -216,6 +216,7 @@ Loyalty Program - Monitor points distribution
 
 ## 📁 Project Structure
 
+
 carwash-management-system/
 ├── src/
 │   ├── main/

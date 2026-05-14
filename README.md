@@ -276,4 +276,4 @@ Bootstrap 5
 
 Chart.js
 
-Font Awesome
+Font Awesome.
